@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "场所管理",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-table": "/node-modules/uview-ui/components/u-table/u-table",
+    "u-tr": "/node-modules/uview-ui/components/u-tr/u-tr",
+    "u-th": "/node-modules/uview-ui/components/u-th/u-th",
+    "u-td": "/node-modules/uview-ui/components/u-td/u-td",
+    "u-form": "/node-modules/uview-ui/components/u-form/u-form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "gas-tabbar": "/components/Tabba/GasTabbar"
+  }
+}

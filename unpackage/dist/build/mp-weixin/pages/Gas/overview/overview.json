@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "设备总览",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "gas-tabbar": "/components/Tabba/GasTabbar"
+  }
+}

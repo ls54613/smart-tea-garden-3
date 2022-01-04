@@ -1,0 +1,256 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		 {
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	    ,{
+            "path" : "pages/realScene/realScene",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom"
+            }
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                 "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/environment/environment",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/video/video",
+            "style" :                                                                                    
+            {
+               "navigationStyle": "custom"
+            }
+            
+			
+        }
+        ,{
+            "path" : "pages/management/management",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "考勤详情"
+            }
+            
+        }
+        ,{
+            "path" : "pages/picture/picture",
+            "style" : {
+				 "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/modify/modify",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改个人信息",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/my/UavatarCropper/UavatarCropper",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "头像选择",
+                "navigationBarBackgroundColor": "#000000"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/code/code",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录验证码",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/infoshun/infoshun",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "竞赛信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/infoshun/shuninfo/shuninfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/management/form/form",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "名单详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/Gas",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的设备",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/record/record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "报警记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/overview/overview",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备总览",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/fault/fault",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备故障",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/details/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/place/place",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "场所管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/equipment/equipment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备管理",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/Gas/record/record_details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "报警详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/testing/testing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备质检",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Gas/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设备列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "万欧智慧茶园",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	    "tabBar": {
+			"color":"#FFFFFF",
+			"bg-color":"#ffffff",
+	        "list": [
+				
+				{
+	                "pagePath": "pages/index/index"
+	            },
+				{
+				    "pagePath": "pages/Gas/record/record"
+				},
+				{
+				    "pagePath": "pages/Gas/Gas"
+				},
+	            {
+	                "pagePath": "pages/my/my"
+	            },
+				{
+				    "pagePath": "pages/Gas/overview/overview"
+				}
+				// {
+				//     "pagePath": "pages/Gas/fault/fault"
+				// }
+				// {
+				//     "pagePath": "pages/realScene/realScene"
+				// },
+	        ]
+	    },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
