@@ -5,6 +5,9 @@
   },
   "setting": {
     "urlCheck": false,
+<<<<<<< HEAD
+    "minified": true
+=======
     "es6": false,
     "enhance": true,
     "postcss": true,
@@ -38,8 +41,13 @@
     "disableUseStrict": false,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
+<<<<<<< HEAD
     "ignoreUploadUnusedFiles": true,
     "minifyWXML": true
+=======
+    "ignoreUploadUnusedFiles": true
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
+>>>>>>> f22e01259027919f932e18bc995f4789d3d54c86
   },
   "compileType": "miniprogram",
   "libVersion": "",
@@ -47,6 +55,21 @@
   "projectname": "万农宝",
   "condition": {
     "search": {
+<<<<<<< HEAD
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 0,
+=======
       "list": []
     },
     "conversation": {
@@ -56,6 +79,7 @@
       "list": []
     },
     "miniprogram": {
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
       "list": [
         {
           "name": "",

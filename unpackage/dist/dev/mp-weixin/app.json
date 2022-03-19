@@ -1,18 +1,28 @@
 {
   "pages": [
     "pages/index/index",
+<<<<<<< HEAD
+    "pages/tea/tea",
+=======
     "pages/realScene/realScene",
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
     "pages/my/my",
     "pages/environment/environment",
     "pages/management/management",
     "pages/picture/picture",
     "pages/my/modify/modify",
     "pages/my/UavatarCropper/UavatarCropper",
+<<<<<<< HEAD
+    "pages/login/code/code",
+    "pages/infoshun/shuninfo/shuninfo",
+    "pages/management/form/form"
+=======
     "pages/login/login",
     "pages/login/code/code",
     "pages/infoshun/infoshun",
     "pages/infoshun/shuninfo/shuninfo",
     "pages/basiclnfo/basiclnfo"
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
   ],
   "subPackages": [],
   "window": {
@@ -29,7 +39,11 @@
         "pagePath": "pages/index/index"
       },
       {
+<<<<<<< HEAD
+        "pagePath": "pages/tea/tea"
+=======
         "pagePath": "pages/basiclnfo/basiclnfo"
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
       },
       {
         "pagePath": "pages/my/my"
@@ -37,6 +51,10 @@
     ]
   },
   "permission": {},
+<<<<<<< HEAD
+  "usingComponents": {}
+=======
   "usingComponents": {},
   "sitemapLocation": "sitemap.json"
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 }
