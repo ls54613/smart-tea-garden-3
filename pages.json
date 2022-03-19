@@ -15,6 +15,7 @@
 				"navigationStyle": "custom"
 			}
 		}
+<<<<<<< HEAD
 	    ,{
             "path" : "pages/tea/tea",
            "style" :
@@ -22,6 +23,15 @@
                "navigationBarTitleText": "考勤详情"
            }
         }
+=======
+		,{
+		    "path" : "pages/realScene/realScene",
+		    "style" :                                                                                    
+		    {
+		        "navigationStyle": "custom"
+		    }
+		}
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
         ,{
             "path" : "pages/my/my",
             "style" :                                                                                    
@@ -70,7 +80,8 @@
                 "enablePullDownRefresh": false
             }
             
-        },{
+        }
+		,{
             "path" : "pages/my/UavatarCropper/UavatarCropper",
             "style" :                                                                                    
             {
@@ -106,6 +117,17 @@
             }
             
         }
+<<<<<<< HEAD
+=======
+		,{
+		    "path" : "pages/basiclnfo/basiclnfo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "企业信息",
+		        "enablePullDownRefresh": false
+		    }		    
+		}
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
     ],
 
 	"globalStyle": {
@@ -121,19 +143,28 @@
 				
 				{
 	                "pagePath": "pages/index/index"
+<<<<<<< HEAD
 	            },
 				{
 				    "pagePath": "pages/tea/tea"
+=======
+	            },				
+				{
+				    "pagePath": "pages/basiclnfo/basiclnfo"
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 				},
 	            {
 	                "pagePath": "pages/my/my"
 	            }
+<<<<<<< HEAD
 				// {
 				//     "pagePath": "pages/Gas/fault/fault"
 				// }
 				// {
 				//     "pagePath": "pages/realScene/realScene"
 				// },
+=======
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 	        ]
 	    },
 	"condition" : { //模式配置，仅开发期间生效

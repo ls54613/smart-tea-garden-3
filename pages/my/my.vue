@@ -22,7 +22,7 @@
 				<u-cell-item icon="account" title="人员考察" @tap="toManagement"></u-cell-item>
 				<!-- <u-cell-item icon="eye" title="视频监控"></u-cell-item> -->
 				<u-cell-item icon="coupon" title="环境监测" @tap="toEnvironment"></u-cell-item>
-				<u-cell-item icon="heart" title="设备查看" @tap="toGas"></u-cell-item>
+				<u-cell-item icon="heart" title="企业信息" @tap="tobasiclnfo"></u-cell-item>
 			</u-cell-group>
 		</view>
 <!-- 		<view class="u-m-t-20">
@@ -76,9 +76,9 @@
 					url: '/pages/my/modify/modify'
 				})
 			},
-			toGas() {
+			basiclnfo() {
 				uni.switchTab({
-					url: '/pages/Gas/Gas'
+					url: '/pages/basiclnfo/basiclnfo'
 				})
 			},
 			toManagement() {

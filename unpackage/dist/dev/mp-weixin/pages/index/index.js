@@ -1,9 +1,15 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/index/index"],{
 
 /***/ 44:
+<<<<<<< HEAD
 /*!****************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/main.js?{"page":"pages%2Findex%2Findex"} ***!
   \****************************************************************************************************************/
+=======
+/*!***************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \***************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +23,15 @@ createPage(_index.default);
 /***/ }),
 
 /***/ 45:
+<<<<<<< HEAD
 /*!*********************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue ***!
   \*********************************************************************************************/
+=======
+/*!********************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue ***!
+  \********************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,9 +70,15 @@ component.options.__file = "pages/index/index.vue"
 /***/ }),
 
 /***/ 46:
+<<<<<<< HEAD
 /*!****************************************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
   \****************************************************************************************************************************************/
+=======
+/*!***************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \***************************************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80,9 +98,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 47:
+<<<<<<< HEAD
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+=======
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -107,9 +131,15 @@ render._withStripped = true
 /***/ }),
 
 /***/ 48:
+<<<<<<< HEAD
 /*!**********************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************/
+=======
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -123,9 +153,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 49:
+<<<<<<< HEAD
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+=======
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -266,7 +302,11 @@ __webpack_require__(/*! @/common/icon/iconfont.css */ 52); //
 //
 //
 //
+<<<<<<< HEAD
 var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false', textdata: '数据分析' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
+=======
+var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 166));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false', textdata: '数据分析' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
             // console.log(res.code)
             (0, _api.getOpenId)(res.code).then(function (e) {if (e[1].data.code = 200) {// console.log(e)
                 // console.log(e[1].data.data)
@@ -300,9 +340,15 @@ var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/
 /***/ }),
 
 /***/ 53:
+<<<<<<< HEAD
 /*!******************************************************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
   \******************************************************************************************************************************************************/
+=======
+/*!*****************************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -316,9 +362,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 54:
+<<<<<<< HEAD
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/process/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+=======
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages/index/index.vue?vue&type=style&index=0&id=57280228&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

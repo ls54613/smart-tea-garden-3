@@ -1,4 +1,4 @@
-import { baseUrl,baseUrl2 } from './config.js'
+import { baseUrl,baseUrl2,baseUrl3} from './config.js'
 
 
 export function getOpenId(code){
@@ -37,16 +37,23 @@ export function nodeInfo(){
 	});
 }
 //设备详情
-export function getGas(){
-	return uni.request({
-		url: `${baseUrl2}/service/jikaida/getGas?device=869334058143721`,
-		method: 'GET',
-	});
-}
+// export function getGas(){
+// 	return uni.request({
+// 		url: `${baseUrl2}/service/jikaida/getGas?device=869334058143721`,
+// 		method: 'GET',
+// 	});
+// }
 
 export function getIsFalse(){
 	return uni.request({
 		url: `${baseUrl}/gdadmin/mini/sensorInfo/getIsFalse`,
+		method: 'GET',
+	});
+}
+// 茶企基本信息
+export function getBasiclnfo(){
+	return uni.request({
+		url: `${baseUrl3}/teaEnterpriseInfo/getBaseInfo/18`,
 		method: 'GET',
 	});
 }

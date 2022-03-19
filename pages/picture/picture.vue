@@ -37,7 +37,11 @@
 			return {
 				keyword:'',
 				vid:'false',
+<<<<<<< HEAD
 				textdata:'基地实景'
+=======
+				textdata:'数据分析'
+>>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 			}
 		},
 		onLoad() {
