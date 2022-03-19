@@ -10,10 +10,10 @@ export const tabbar = [{
 					{
 						iconPath: "http://cdn.1334.top/%E8%AE%BE%E5%A4%87.png",
 						selectedIconPath: "http://cdn.1334.top/%E8%AE%BE%E5%A4%87%20%281%29.png",
-						text: '燃气设备',
+						text: '茶企信息',
 						midButton: true,
 						customIcon: false,
-						pagePath: '/pages/Gas/Gas',
+						pagePath: '/pages/tea/tea',
 					},
 					{
 						iconPath: "account",

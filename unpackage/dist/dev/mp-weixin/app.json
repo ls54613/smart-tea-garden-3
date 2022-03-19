@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tea/tea",
+    "pages/my/my",
+    "pages/environment/environment",
+    "pages/video/video",
+    "pages/management/management",
+    "pages/picture/picture",
+    "pages/my/modify/modify",
+    "pages/my/UavatarCropper/UavatarCropper",
+    "pages/login/code/code",
+    "pages/infoshun/shuninfo/shuninfo",
+    "pages/management/form/form"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "万欧智慧茶园",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "bg-color": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/tea/tea"
+      },
+      {
+        "pagePath": "pages/my/my"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}

@@ -3,6 +3,12 @@
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		 // {
+		 // 	"path": "pages/login/login",
+		 // 	"style": {
+		 // 		"navigationStyle": "custom"
+		 // 	}
+		 // },
 		 {
 			"path": "pages/index/index",
 			"style": {
@@ -10,11 +16,11 @@
 			}
 		}
 	    ,{
-            "path" : "pages/realScene/realScene",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom"
-            }
+            "path" : "pages/tea/tea",
+           "style" :
+           {
+               "navigationBarTitleText": "考勤详情"
+           }
         }
         ,{
             "path" : "pages/my/my",
@@ -36,7 +42,7 @@
             "path" : "pages/video/video",
             "style" :                                                                                    
             {
-               "navigationStyle": "custom"
+               "navigationt": "custom"
             }
             
 			
@@ -74,28 +80,10 @@
             
         }
         ,{
-            "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "登录",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
             "path" : "pages/login/code/code",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "登录验证码",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/infoshun/infoshun",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "竞赛信息",
                 "enablePullDownRefresh": false
             }
             
@@ -118,95 +106,6 @@
             }
             
         }
-        ,{
-            "path" : "pages/Gas/Gas",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "我的设备",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/record/record",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "报警记录",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/overview/overview",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备总览",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/fault/fault",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备故障",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/details/details",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/place/place",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "场所管理",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/equipment/equipment",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备管理",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/Gas/record/record_details",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "报警详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/testing/testing",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备质检",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/list/list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备列表",
-                "enablePullDownRefresh": false
-            }
-            
-        }
     ],
 
 	"globalStyle": {
@@ -224,17 +123,11 @@
 	                "pagePath": "pages/index/index"
 	            },
 				{
-				    "pagePath": "pages/Gas/record/record"
-				},
-				{
-				    "pagePath": "pages/Gas/Gas"
+				    "pagePath": "pages/tea/tea"
 				},
 	            {
 	                "pagePath": "pages/my/my"
-	            },
-				{
-				    "pagePath": "pages/Gas/overview/overview"
-				}
+	            }
 				// {
 				//     "pagePath": "pages/Gas/fault/fault"
 				// }

@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view >
 		<u-tabbar v-model="current" :list="list"></u-tabbar>
 	</view>
 </template>

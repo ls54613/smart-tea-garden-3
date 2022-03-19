@@ -50,14 +50,17 @@ export default {
 	},
 	methods: {
 		submit () {
-			if(this.$u.test.mobile(this.tel)) {
-				this.$u.route({
-					url: 'pages/login/code/code',
-					params:{
-						tel:this.tel
-					}
-				})
-			}
+			// if(this.$u.test.mobile(this.tel)) {
+			// 	this.$u.route({
+			// 		url: 'pages/login/code/code',
+			// 		params:{
+			// 			tel:this.tel
+			// 		}
+			// 	})
+			// }
+			uni.navigateTo({
+					url: '/pages/login/code/code'
+					})
 		}
 	}
 };

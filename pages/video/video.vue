@@ -8,54 +8,25 @@
 				<text>开发全程数字化管理</text>
 			</view>
 		</view>
-		<view class="search">
-			<u-search placeholder="请输入内容" v-model="keyword" @custom="search" @search="search"></u-search>
+		<view class="main">
+			<text>历史销量</text>
+			<text>成本分析</text>
 		</view>
-		<view class="uni-padding-wrap uni-common-mt " v-if="vid">
-			<view class="video-box">
-				<video src="http://hls01open.ys7.com/openlive/02b0a6383639444d9518c263f9817152.hd.m3u8"
-					@error="videoErrorCallback"  enable-danmu  controls ></video>
-			</view>
-			<view class="video-box">
-				<video src="http://hls01open.ys7.com/openlive/02b0a6383639444d9518c263f9817152.hd.m3u8"
-					@error="videoErrorCallback"  enable-danmu  controls ></video>
-			</view>
-		</view>
-		<view class="empty-box" v-else>
-				<u-empty text="暂无数据 !" mode="list"></u-empty>
-		</view>
-	
 		<ct-tabbar />
 	</view>
 </template>
 <script>
 	import ctTabbar from "@/components/Tabba/ctTabbar.vue"
-	import {getIsFalse} from '@/common/api.js'
 	export default {
 		components:{ctTabbar},
 		data() {
 			return {
-				keyword:'',
-				vid:'false',
 				textdata:'数据分析'
 			}
 		},
 		onLoad() {
-			this.Falseinfo()
 		},
 		methods: {
-			search(value){
-				console.log(value)
-				this.keyword = ''
-			},
-			Falseinfo() {
-				getIsFalse().then((res)=>{
-					this.vid = res[1].data.data
-					if(this.vid){
-						this.textdata = '视频监控'
-					}
-				})
-			},
 		}
 	}
 </script>
@@ -68,8 +39,5 @@
 	.title text:nth-child(1) {margin-left: 132rpx;}
 	.title text:nth-child(3) {font-size: 28rpx;}
 	
-	.search {width: 650rpx; margin: 20rpx auto;}
-	.video-box {width: 649rpx; margin: 20rpx auto; }
-	.video-box video {width: 649rpx; height:365.6rpx ; border-radius: 15rpx; overflow: hidden;}
-	.empty-box {width: 750rpx; margin-top: 280rpx;}
+	.main text{display: block;text-align: center;}
 </style>
