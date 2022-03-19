@@ -8,10 +8,10 @@ export const tabbar = [{
 						pagePath: '/pages/index/index',
 					},
 					{
-						iconPath: "chat",
-						selectedIconPath: "chat-filled",
+						iconPath: "info",
+						selectedIconPath: "email-fill",
 						text: '企业信息',
-						midButton: true,
+						isDot: false,
 						customIcon: false,
 						pagePath: '/pages/basiclnfo/basiclnfo',
 					},

@@ -947,7 +947,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2221,9 +2221,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 117:
-/*!******************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/weCropper.js ***!
-  \******************************************************************/
+/*!******************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/weCropper.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3356,9 +3356,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 12:
-/*!*************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/store/index.js ***!
-  \*************************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/store/index.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4637,9 +4637,9 @@ module.exports = index_cjs;
 /***/ }),
 
 /***/ 14:
-/*!*****************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/index.js ***!
-  \*****************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/index.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4789,9 +4789,9 @@ var install = function install(Vue) {
 /***/ }),
 
 /***/ 15:
-/*!****************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/mixin/mixin.js ***!
-  \****************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/mixin/mixin.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4863,9 +4863,9 @@ var install = function install(Vue) {
 /***/ }),
 
 /***/ 16:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/request/index.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/request/index.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5044,9 +5044,9 @@ new Request();exports.default = _default;
 /***/ }),
 
 /***/ 17:
-/*!***********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/deepMerge.js ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/deepMerge.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5085,9 +5085,9 @@ deepMerge;exports.default = _default;
 /***/ }),
 
 /***/ 171:
-/*!***************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/common.js ***!
-  \***************************************************************/
+/*!***************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/common.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5102,10 +5102,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.tabbar = v
   pagePath: '/pages/index/index' },
 
 {
-  iconPath: "chat",
-  selectedIconPath: "chat-filled",
+  iconPath: "info",
+  selectedIconPath: "email-fill",
   text: '企业信息',
-  midButton: true,
+  isDot: false,
   customIcon: false,
   pagePath: '/pages/basiclnfo/basiclnfo' },
 
@@ -5121,9 +5121,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.tabbar = v
 /***/ }),
 
 /***/ 18:
-/*!***********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/deepClone.js ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/deepClone.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5155,9 +5155,9 @@ deepClone;exports.default = _default;
 /***/ }),
 
 /***/ 19:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/test.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/test.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5428,9 +5428,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 20:
-/*!*************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/queryParams.js ***!
-  \*************************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/queryParams.js ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5497,17 +5497,17 @@ queryParams;exports.default = _default;
 /***/ }),
 
 /***/ 21:
-/*!*******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/route.js ***!
-  \*******************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/route.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           */var
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -5703,9 +5703,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 234:
-/*!*************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/pages.json?{"type":"stat"} ***!
-  \*************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages.json?{"type":"stat"} ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5715,9 +5715,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 235:
-/*!*******************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
-  \*******************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/uni_modules/qiun-data-charts/js_sdk/u-charts/u-charts.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12539,9 +12539,9 @@ if ( true && typeof module.exports === "object") {
 /***/ }),
 
 /***/ 236:
-/*!*************************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
-  \*************************************************************************************************************/
+/*!*************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/uni_modules/qiun-data-charts/js_sdk/u-charts/config-ucharts.js ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13970,9 +13970,9 @@ module.exports = {
 /***/ }),
 
 /***/ 25:
-/*!************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/timeFormat.js ***!
-  \************************************************************************************************/
+/*!************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/timeFormat.js ***!
+  \************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14032,9 +14032,9 @@ timeFormat;exports.default = _default;
 /***/ }),
 
 /***/ 258:
-/*!*****************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/util/emitter.js ***!
-  \*****************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/util/emitter.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14092,9 +14092,9 @@ function _broadcast(componentName, eventName, params) {
 /***/ }),
 
 /***/ 26:
-/*!**********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/timeFrom.js ***!
-  \**********************************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/timeFrom.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14150,9 +14150,9 @@ timeFrom;exports.default = _default;
 /***/ }),
 
 /***/ 27:
-/*!***************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/colorGradient.js ***!
-  \***************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/colorGradient.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14294,9 +14294,9 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
 /***/ }),
 
 /***/ 28:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/guid.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/guid.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14346,9 +14346,9 @@ guid;exports.default = _default;
 /***/ }),
 
 /***/ 29:
-/*!*******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/color.js ***!
-  \*******************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/color.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19920,7 +19920,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -19941,14 +19941,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -20034,7 +20034,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"万农宝","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -20446,9 +20446,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 30:
-/*!***********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/type2icon.js ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/type2icon.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20492,9 +20492,9 @@ type2icon;exports.default = _default;
 /***/ }),
 
 /***/ 31:
-/*!*************************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/randomArray.js ***!
-  \*************************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/randomArray.js ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20510,9 +20510,9 @@ randomArray;exports.default = _default;
 /***/ }),
 
 /***/ 32:
-/*!*********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/addUnit.js ***!
-  \*********************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/addUnit.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20529,9 +20529,9 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 /***/ }),
 
 /***/ 33:
-/*!********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/random.js ***!
-  \********************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/random.js ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20550,9 +20550,9 @@ random;exports.default = _default;
 /***/ }),
 
 /***/ 34:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/trim.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/trim.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20576,9 +20576,9 @@ trim;exports.default = _default;
 /***/ }),
 
 /***/ 35:
-/*!*******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/toast.js ***!
-  \*******************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/toast.js ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20597,9 +20597,9 @@ toast;exports.default = _default;
 /***/ }),
 
 /***/ 36:
-/*!***********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/getParent.js ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/getParent.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20655,9 +20655,9 @@ function getParent(name, keys) {
 /***/ }),
 
 /***/ 37:
-/*!*********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/$parent.js ***!
-  \*********************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/$parent.js ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20684,9 +20684,9 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 /***/ }),
 
 /***/ 38:
-/*!*****************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/sys.js ***!
-  \*****************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/sys.js ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20703,9 +20703,9 @@ function sys() {
 /***/ }),
 
 /***/ 39:
-/*!**********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/debounce.js ***!
-  \**********************************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/debounce.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21207,9 +21207,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 40:
-/*!**********************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/throttle.js ***!
-  \**********************************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/function/throttle.js ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21250,9 +21250,9 @@ throttle;exports.default = _default;
 /***/ }),
 
 /***/ 41:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/config/config.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/config/config.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21274,9 +21274,9 @@ var version = '1.8.3';var _default =
 /***/ }),
 
 /***/ 42:
-/*!******************************************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/config/zIndex.js ***!
-  \******************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/node_modules/uview-ui/libs/config/zIndex.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21304,9 +21304,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 43:
-/*!**************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/share.js ***!
-  \**************************************************************/
+/*!**************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/share.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21336,9 +21336,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 5:
-/*!*********************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/pages.json ***!
-  \*********************************************************/
+/*!*********************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/pages.json ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21347,9 +21347,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 50:
-/*!***************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/config.js ***!
-  \***************************************************************/
+/*!***************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/config.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21364,9 +21364,9 @@ exports.baseUrl2 = baseUrl2;var baseUrl3 = 'http://datavapi.wanoukj.com/openApi'
 /***/ }),
 
 /***/ 51:
-/*!************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/api.js ***!
-  \************************************************************/
+/*!************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/api.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21426,7 +21426,7 @@ function getIsFalse() {
 // 茶企基本信息
 function getBasiclnfo() {
   return uni.request({
-    url: "".concat(baseUr3, "/teaEnterpriseInfo/getBaseInfo/18"),
+    url: "".concat(_config.baseUrl3, "/teaEnterpriseInfo/getBaseInfo/18"),
     method: 'GET' });
 
 }
@@ -21435,9 +21435,9 @@ function getBasiclnfo() {
 /***/ }),
 
 /***/ 52:
-/*!***********************************************************************!*\
-  !*** D:/wannongbao/wannongbao_mini_liuyemei/common/icon/iconfont.css ***!
-  \***********************************************************************/
+/*!***********************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/uniapp/wannongbao_mini_liuyemei/common/icon/iconfont.css ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

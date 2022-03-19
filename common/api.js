@@ -1,4 +1,4 @@
-import { baseUrl,baseUrl2 } from './config.js'
+import { baseUrl,baseUrl2,baseUrl3} from './config.js'
 
 
 export function getOpenId(code){
@@ -53,7 +53,7 @@ export function getIsFalse(){
 // 茶企基本信息
 export function getBasiclnfo(){
 	return uni.request({
-		url: `${baseUr3}/teaEnterpriseInfo/getBaseInfo/18`,
+		url: `${baseUrl3}/teaEnterpriseInfo/getBaseInfo/18`,
 		method: 'GET',
 	});
 }
