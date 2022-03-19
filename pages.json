@@ -9,13 +9,13 @@
 				"navigationStyle": "custom"
 			}
 		}
-	    ,{
-            "path" : "pages/realScene/realScene",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom"
-            }
-        }
+		,{
+		    "path" : "pages/realScene/realScene",
+		    "style" :                                                                                    
+		    {
+		        "navigationStyle": "custom"
+		    }
+		}
         ,{
             "path" : "pages/my/my",
             "style" :                                                                                    
@@ -64,7 +64,8 @@
                 "enablePullDownRefresh": false
             }
             
-        },{
+        }
+		,{
             "path" : "pages/my/UavatarCropper/UavatarCropper",
             "style" :                                                                                    
             {
@@ -118,95 +119,14 @@
             }
             
         }
-        ,{
-            "path" : "pages/Gas/Gas",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "我的设备",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/record/record",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "报警记录",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/overview/overview",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备总览",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/fault/fault",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备故障",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/details/details",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/place/place",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "场所管理",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/equipment/equipment",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备管理",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/Gas/record/record_details",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "报警详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/testing/testing",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备质检",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Gas/list/list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "设备列表",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+		,{
+		    "path" : "pages/basiclnfo/basiclnfo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "企业信息",
+		        "enablePullDownRefresh": false
+		    }		    
+		}
     ],
 
 	"globalStyle": {
@@ -222,25 +142,13 @@
 				
 				{
 	                "pagePath": "pages/index/index"
-	            },
+	            },				
 				{
-				    "pagePath": "pages/Gas/record/record"
-				},
-				{
-				    "pagePath": "pages/Gas/Gas"
+				    "pagePath": "pages/basiclnfo/basiclnfo"
 				},
 	            {
 	                "pagePath": "pages/my/my"
-	            },
-				{
-				    "pagePath": "pages/Gas/overview/overview"
-				}
-				// {
-				//     "pagePath": "pages/Gas/fault/fault"
-				// }
-				// {
-				//     "pagePath": "pages/realScene/realScene"
-				// },
+	            }
 	        ]
 	    },
 	"condition" : { //模式配置，仅开发期间生效
