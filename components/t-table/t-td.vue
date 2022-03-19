@@ -66,6 +66,12 @@
 		text-align: center;
 		color: #555c60;
 		font-size: 28upx;
+		overflow: hidden; /* 超出的部分隐藏起来 */  
+		white-space: nowrap;/* 不显示的地方用省略号...代替 */  
+		text-overflow: ellipsis; /*省略号显示*/
+		-o-text-overflow: ellipsis;
+		-moz-text-overflow: ellipsis;
+		-webkit-text-overflow: ellipsis;
 
 	}
 </style>

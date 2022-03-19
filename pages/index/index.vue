@@ -21,10 +21,6 @@
 				<image src="../../static/img/renyuan.png" mode=""></image>
 				<text>生产管理</text>
 			</view>
-			<view @tap="toVideo">
-				<image src="../../static/img/shengcguanl.png" mode=""></image>
-				<text>{{textdata}}</text>
-			</view>
 		</view>
 		<view class="alert">
 			<text class="iconfont icon-notice">环境预警:当前气温为5度，温度过低。</text>
@@ -85,8 +81,7 @@
 					image: '',
 					
 				},
-				vid:'false',
-				textdata:'数据分析'
+				vid:'false'
 			}
 		},
 		onLoad() {
@@ -141,11 +136,6 @@
 			toEnvironment() {
 				uni.navigateTo({
 					url: '/pages/environment/environment'
-				})
-			},
-			toVideo() {
-				uni.navigateTo({
-					url: '/pages/video/video'
 				})
 			},
 			toManagement() {

@@ -96,19 +96,19 @@ var components
 try {
   components = {
     uNavbar: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-navbar/u-navbar */ "node-modules/uview-ui/components/u-navbar/u-navbar").then(__webpack_require__.bind(null, /*! uview-ui/components/u-navbar/u-navbar.vue */ 172))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-navbar/u-navbar */ "node-modules/uview-ui/components/u-navbar/u-navbar").then(__webpack_require__.bind(null, /*! uview-ui/components/u-navbar/u-navbar.vue */ 158))
     },
     uAvatar: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-avatar/u-avatar */ "node-modules/uview-ui/components/u-avatar/u-avatar").then(__webpack_require__.bind(null, /*! uview-ui/components/u-avatar/u-avatar.vue */ 186))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-avatar/u-avatar */ "node-modules/uview-ui/components/u-avatar/u-avatar").then(__webpack_require__.bind(null, /*! uview-ui/components/u-avatar/u-avatar.vue */ 172))
     },
     uIcon: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */ "node-modules/uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 193))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */ "node-modules/uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 179))
     },
     uCellGroup: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-cell-group/u-cell-group */ "node-modules/uview-ui/components/u-cell-group/u-cell-group").then(__webpack_require__.bind(null, /*! uview-ui/components/u-cell-group/u-cell-group.vue */ 200))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-cell-group/u-cell-group */ "node-modules/uview-ui/components/u-cell-group/u-cell-group").then(__webpack_require__.bind(null, /*! uview-ui/components/u-cell-group/u-cell-group.vue */ 186))
     },
     uCellItem: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-cell-item/u-cell-item */ "node-modules/uview-ui/components/u-cell-item/u-cell-item").then(__webpack_require__.bind(null, /*! uview-ui/components/u-cell-item/u-cell-item.vue */ 207))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-cell-item/u-cell-item */ "node-modules/uview-ui/components/u-cell-item/u-cell-item").then(__webpack_require__.bind(null, /*! uview-ui/components/u-cell-item/u-cell-item.vue */ 193))
     }
   }
 } catch (e) {
@@ -238,7 +238,7 @@ var _api = __webpack_require__(/*! @/common/api.js */ 51); //
 //
 //
 //
-var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 166));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { pic: '', nickname: '', vid: 'false', textdata: '数据分析' };}, onLoad: function onLoad() {this.Falseinfo();}, onShow: function onShow() {this.sahjhda();}, methods: { //获取用户信息
+var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { pic: '', nickname: '', vid: 'false', textdata: '数据分析' };}, onLoad: function onLoad() {this.Falseinfo();}, onShow: function onShow() {this.sahjhda();}, methods: { //获取用户信息
     sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {(0, _api.getOpenId)(res.code).then(function (e) {if (e[1].data.code = 200) {var openId = e[1].data.data.match(/"openid":"(\S*)"}/)[1];(0, _api.getOpenIdDetail)(openId).then(function (arr) {that.nickname = arr[1].data.data.nickname;that.pic = arr[1].data.data.image;});}});} });}, toModify: function toModify() {uni.navigateTo({
         url: '/pages/my/modify/modify' });
 

@@ -24,7 +24,7 @@
 				<t-td>经营现状</t-td>
 				<t-td>开业</t-td>
 				<t-td>注册资本</t-td>
-				<t-td>{{data.regCapital+"人名币"}}</t-td>
+				<t-td>{{data.regCapital+"人民币"}}</t-td>
 			</t-tr>
 			<t-tr>
 				<t-td>地址</t-td>
@@ -67,39 +67,7 @@
 </script>
 
 <style scoped>
-	.container {
-		width: 750rpx;
-		background-color: #f6f7f9;
-	}
-	.container text {
-		line-height: 100rpx;
-		display: inline-block;
-		position: relative;
-	}
-	.container-box {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 25rpx 25rpx 25rpx;
-	}
-	.container-box view {
-		width: 325rpx;
-		height: 207rpx;
-		text-align: center;
-		background-color: #ffffff;
-		margin: 0 auto 26rpx auto;
-		border-radius: 30rpx;
-		position: relative;
-	}
-	.container-box view text:nth-child(0) {
-		font-size: 28rpx;
-		color: #595950;
-		font-weight: 600;
-		line-height: 80rpx;
-	}
-	.container-box view text:nth-child(1) {
-		font-size: 50rpx;
-		color: #000000;
-		display: block;
-		font-weight: 700;
+	.container image{
+		width: 100%;
 	}
 </style>

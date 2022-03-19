@@ -1,92 +1,105 @@
 <template>
 	<view class="cencend">
-		<view class="time-title">
-			<text class="time-left">{{currentdate}}</text><text>{{getDay}}</text>
+		<text class="item-text">历年产品成本及利润统计</text>
+		<view class="charts-box">
+			<qiun-data-charts type="column" :chartData="chartlist" />
 		</view>
-		<text class="item-text">上班</text>09:00
-		<view class="item-box" @tap="toform">
-			<view class="item-list">
-				<text>准时：{{cardData.sonTime}}人</text> 
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.a1" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-			<view class="item-list middle-list">
-				<text>迟到：{{cardData.slate}}人</text>
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.a2" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-			<view class="item-list">
-				<text>缺卡：{{cardData.sother}}人</text>
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.a3" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-		</view>
-		<text class="item-text">下班</text>18:00
-		<view class="item-box">
-			<view class="item-list">
-				<text>准时：{{cardData.onTime}}人</text>
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.b1" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-			<view class="item-list middle-list">
-				<text>早退：{{cardData.late}}人</text>
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.b2" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-			<view class="item-list">
-				<text>缺卡：{{cardData.other}}人</text>
-				<view class="right-text">
-					<u-icon name="arrow-right" color="#888888"></u-icon>
-				</view>
-				<u-line-progress :percent="cardData.b3" :round="false" active-color="#00aaff" round
-					:show-percent="false" :height="18"></u-line-progress>
-			</view>
-		</view>
+
+		<text class="item-text">历年销量及销售额统计</text>
+	<view class="charts-box">
+		<qiun-data-charts type="column" :chartData="chartData" />
+	</view>
+    <td>采购动态监测</td>
+
 		<ct-tabbar />
 	</view>
 </template>
 
 <script>
 	import ctTabbar from "@/components/Tabba/ctTabbar.vue"
+	import td from "@/components/t-table/t-td.vue"
+	import th from "@/components/t-table/t-th.vue"
+	import tr from "@/components/t-table/t-tr.vue"
+	import {getcostProfit,getsalesvolume,getprocurement} from "@/common/api.js"
 	export default {
-		components:{ctTabbar},
+		components:{
+			ctTabbar,
+			td,
+			th,
+			tr
+			},
 		data() {
 			return {
-				cardData: {
-					sonTime: 28,
-					slate: 4,
-					sother: 2,
-					onTime: 25,
-					late: 7,
-					other: 2,
-					a1: 0,
-					a2: 0,
-					a3: 0,
-					b1: 0,
-					b2: 0,
-					b3: 0,
+				chartlist: {
+					categories: [
+						"2016",
+						"2017",
+						"2018",
+						"2019",
+						"2021"
+					],
+					series: [{
+						"name": "成本费用",
+						"data": [
+							17,
+							20,
+							28,
+							34,
+							12
+				
+						]
+					},
+					{
+						"name": "收益",
+						"data": [
+							17,
+							20,
+							28,
+							34,
+							11
+				
+						]
+					},
+					],
 				},
-				currentdate: '',
-				getDay: ''
+				chartData: {
+					categories: [
+						"2016",
+						"2017",
+						"2018",
+						"2019",
+						"2020"
+					],
+					series: [{
+						"name": "销量",
+						"data": [
+							117,
+							120,
+							128,
+							134,
+
+						]
+					},
+					{
+						"name": "销售额",
+						"data": [
+							117,
+							120,
+							128,
+							134,
+
+						]
+					},
+					],
+				},
+				costProfit:[],
+				salesvolume:[],
+				procurement:[]
 			}
 		},
 		onLoad() {
 			this.jishaun();
+			this.getInfo();
 
 		},
 		created() {
@@ -108,21 +121,16 @@
 				this.cardData.b3 = (this.cardData.other / (this.cardData.onTime + this.cardData.late + this.cardData
 					.other)).toFixed(2) * 100
 			},
-			toform () {
-				uni.navigateTo({
-					url:'/pages/management/form/form',
-				})
-			},
-			getNowFormatDate() {
-				let date = new Date();
-				let year = date.getFullYear();
-				let month = date.getMonth() + 1;
-				let strDate = date.getDate();
-				let getDay = date.getDay();
-				let getDays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六', ]
-				this.getDay = getDays[getDay]
-				let currentdate = year + '年' + month + '月' + strDate + '日';
-				this.currentdate = currentdate
+			getInfo(){
+				getcostProfit().then(res=>{
+					
+				});
+				getsalesvolume().then(res=>{
+					
+				});
+				getprocurement().then(res=>{
+					
+				});
 			}
 		}
 	}
@@ -161,6 +169,14 @@
 		right: 0rpx;
 		text-align: center;
 		line-height: 40rpx;
+	}
+	.time-tab {
+		margin: 0 10rpx;
+	}
+	/* 请根据需求修改图表容器尺寸，如果父容器没有高度图表则会显示异常 */
+	.charts-box {
+		width: 750rpx;
+		height: 500rpx;
 	}
 	.right-text text {margin-right: 300rpx;}
 	.item-text {

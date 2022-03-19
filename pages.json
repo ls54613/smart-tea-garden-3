@@ -33,21 +33,11 @@
             
         }
         ,{
-            "path" : "pages/video/video",
-            "style" :                                                                                    
-            {
-               "navigationStyle": "custom"
-            }
-            
-			
-        }
-        ,{
             "path" : "pages/management/management",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "考勤详情"
             }
-            
         }
         ,{
             "path" : "pages/picture/picture",
@@ -106,15 +96,6 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "详情信息",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/management/form/form",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "名单详情",
                 "enablePullDownRefresh": false
             }
             

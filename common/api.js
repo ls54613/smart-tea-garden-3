@@ -57,3 +57,24 @@ export function getBasiclnfo(){
 		method: 'GET',
 	});
 }
+// 成本与收益
+export function getcostProfit(){
+ return uni.request({
+  url: `${baseUrl3}/teaEnterpriseInfo/costAndProfitStatistics/18`,
+  method: 'GET',
+ });
+}
+// 销售与销售额
+export function getsalesvolume(){
+ return uni.request({
+  url: `${baseUrl3}/teaEnterpriseInfo/getYieldSalesTotal?id=18`,
+  method: 'GET',
+ });
+}
+// 采购动态
+export function getprocurement (){
+ return uni.request({
+  url: `${baseUrl3}/teaEnterpriseInfo/purchaseMonitor?id=18`,
+  method: 'GET',
+ });
+}

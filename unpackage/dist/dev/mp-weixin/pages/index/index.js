@@ -190,10 +190,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
 var _config = __webpack_require__(/*! @/common/config.js */ 50);
 
 
@@ -262,22 +258,16 @@ __webpack_require__(/*! @/common/icon/iconfont.css */ 52); //
 //
 //
 //
-//
-//
-//
-//
-var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 166));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false', textdata: '数据分析' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
+var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
             // console.log(res.code)
             (0, _api.getOpenId)(res.code).then(function (e) {if (e[1].data.code = 200) {// console.log(e)
                 // console.log(e[1].data.data)
                 that.user.openId = e[1].data.data.match(/"openid":"(\S*)"}/)[1];console.log(that.user.openId);(0, _api.getOpenIdDetail)(that.user.openId).then(function (arr) {console.log(arr);if (!arr[1].data.data) {//判断微信用户是否存在不存在跳到登录页面
-                    that.$u.route({ url: 'pages/login/login' });}});} else {console.log('服务器错误！OpenId请求失败');}});} else {console.log('code获取错误！登录失败！' + res.errMsg);}} });}, Falseinfo: function Falseinfo() {var _this = this;(0, _api.getIsFalse)().then(function (res) {console.log('发送请求');_this.vid = res[1].data.data;if (_this.vid) {_this.textdata = '视频监控';console.log('请求结果' + _this.vid);}});}, toEnvironment: function toEnvironment() {uni.navigateTo({
-        url: '/pages/environment/environment' });
-
+                    that.$u.route({ url: 'pages/login/login' });}});} else {console.log('服务器错误！OpenId请求失败');}});} else {console.log('code获取错误！登录失败！' + res.errMsg);}} });}, Falseinfo: function Falseinfo() {var _this = this;(0, _api.getIsFalse)().then(function (res) {console.log('发送请求');_this.vid = res[1].data.data;if (_this.vid) {_this.textdata = '视频监控';console.log('请求结果' + _this.vid);}});
     },
-    toVideo: function toVideo() {
+    toEnvironment: function toEnvironment() {
       uni.navigateTo({
-        url: '/pages/video/video' });
+        url: '/pages/environment/environment' });
 
     },
     toManagement: function toManagement() {
