@@ -1,136 +1,106 @@
- <template>
-	<view class="wrap">
-		<view class="top"></view>
-		<view class="content">
-			<view class="title">欢迎登录万农宝</view>
-			<input class="u-border-bottom" type="number" v-model="tel" placeholder="请输入手机号" maxlength="11"/>
-			<view class="tips">未注册的手机号验证后自动创建账号</view>
-			<button @tap="submit" :style="[inputStyle]" class="getCaptcha">获取短信验证码</button>
-<!-- 			<view class="alternative">
-				<view class="password">密码登录</view>
-				<view class="issue">遇到问题</view>
-			</view> -->
+<template>
+    <view class="content">
+        <view class="avatorWrapper">
+            <view class="avator">
+                <image class="img" src="../../static/img/taiyang.png" mode="widthFix"></image>
+            </view>
+        </view>
+		<view class="title">
+			<text>欢迎登录万农宝</text>
 		</view>
-		<view class="buttom">
-<!-- 			<view class="loginType">
-				<view class="wechat item">
-					<view class="icon"><u-icon size="70" name="weixin-fill" color="rgb(83,194,64)"></u-icon></view>
-					微信
-				</view>
-				<view class="QQ item">
-					<view class="icon"><u-icon size="70" name="qq-fill" color="rgb(17,183,233)"></u-icon></view>
-					QQ
-				</view>
-			</view> -->
-			<view class="hint">
-				登录代表同意
-				<text class="link">万农宝用户协议、隐私政策，</text>
-				并授权使用您的微信账号信息（如昵称、头像）以便您统一管理
-			</view>
-		</view>
-	</view>
+        <view class="form">
+            <view class="inputWrapper">
+                <input class="input" placeholder-style="color: #ffffff;" type="text" value="" placeholder="请输入用户名"/>
+            </view>
+            <view class="inputWrapper">
+                <input class="input" placeholder-style="color: #ffffff;" type="password" value="" placeholder="请输入密码"/>
+            </view>
+            <button  class="loginBtn" @click="toIndex">登录</button>
+        </view>
+    </view>
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			tel: ''
-		}
-	},
-	computed: {
-		inputStyle() {
-			let style = {};
-			if(this.tel) {
-				style.color = "#fff";
-				style.backgroundColor = this.$u.color['warning'];
+    export default {
+        data() {
+            return {
+                title: '万农宝'
+            }
+        },
+        onLoad() {
+
+        },
+        methods: {
+			toIndex(){
+				uni.switchTab({
+					url:'/pages/index/index'
+				})
 			}
-			return style;
-		}
-	},
-	methods: {
-		submit () {
-			// if(this.$u.test.mobile(this.tel)) {
-			// 	this.$u.route({
-			// 		url: 'pages/login/code/code',
-			// 		params:{
-			// 			tel:this.tel
-			// 		}
-			// 	})
-			// }
-			uni.navigateTo({
-					url: '/pages/login/code/code'
-					})
-		}
-	}
-};
+        }
+    }
 </script>
 
-<style lang="scss" scoped>
-.wrap {
-	font-size: 28rpx;
-	.content {
-		width: 600rpx;
-		margin: 160rpx auto 0;
-
-		.title {
-			text-align: left;
-			font-size: 60rpx;
-			font-weight: 500;
-			margin-bottom: 100rpx;
-		}
-		input {
-			text-align: left;
-			margin-bottom: 10rpx;
-			padding-bottom: 6rpx;
-		}
-		.tips {
-			color: $u-type-info;
-			margin-bottom: 60rpx;
-			margin-top: 8rpx;
-		}
-		.getCaptcha {
-			background-color: rgb(253, 243, 208);
-			color: $u-tips-color;
-			border: none;
-			font-size: 30rpx;
-			padding: 12rpx 0;
-			
-			&::after {
-				border: none;
-			}
-		}
-		.alternative {
-			color: $u-tips-color;
-			display: flex;
-			justify-content: space-between;
-			margin-top: 30rpx;
-		}
+<style scoped>
+    .content {
+        /* background: #aaffff; */
+		background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170724%2Fd83f0446db0b4e6da9dc498ff6ddf1e9_th.png&refer=http%3A%2F%2Fimg.mp.sohu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650444902&t=0b97ed38395a5fafd2673fd4e77fcb0a);
+		background-size: cover;
+		overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
+	.title{
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+		font-size: 65rpx;
 	}
-	.buttom {
-		.loginType {
-			display: flex;
-			padding: 350rpx 150rpx 150rpx 150rpx;
-			justify-content:space-between;
-			
-			.item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				color: $u-content-color;
-				font-size: 28rpx;
-			}
-		}
-		
-		.hint {
-			padding: 20rpx 40rpx;
-			font-size: 20rpx;
-			color: $u-tips-color;
-			
-			.link {
-				color: $u-type-warning;
-			}
-		}
-	}
-}
+    .avatorWrapper{
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .avator{
+        width: 200upx;
+        height: 200upx;
+        overflow: hidden;
+    }
+    .avator .img{
+        width: 100%
+    }
+    .form{
+        padding: 0 100upx;
+        margin-top: 30px;
+    }
+    .inputWrapper{
+        width: 100%;
+        height: 80upx;
+        /* background: white; */
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+    .inputWrapper .input{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+		border: 2px solid #55ffff;
+		border-radius: 50upx;
+    }
+    .loginBtn{
+        width: 100%;
+        height: 80upx;
+		color:#E5E5E5;
+        background: #2cbe9b;
+        /* border-radius: 50upx; */
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 </style>

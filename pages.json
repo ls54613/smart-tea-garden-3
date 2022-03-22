@@ -3,27 +3,19 @@
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		 // {
-		 // 	"path": "pages/login/login",
-		 // 	"style": {
-		 // 		"navigationStyle": "custom"
-		 // 	}
-		 // },
+		 {
+		 	"path": "pages/login/login",
+		 	"style": {
+		 		"navigationStyle": "custom"
+		 	}
+		 }
+		 ,
 		 {
 			"path": "pages/index/index",
 			"style": {
 				"navigationStyle": "custom"
 			}
 		}
-<<<<<<< HEAD
-	    ,{
-            "path" : "pages/tea/tea",
-           "style" :
-           {
-               "navigationBarTitleText": "考勤详情"
-           }
-        }
-=======
 		,{
 		    "path" : "pages/realScene/realScene",
 		    "style" :                                                                                    
@@ -31,7 +23,6 @@
 		        "navigationStyle": "custom"
 		    }
 		}
->>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
         ,{
             "path" : "pages/my/my",
             "style" :                                                                                    
@@ -49,8 +40,6 @@
             
         }
         ,{
-<<<<<<< HEAD
-=======
             "path" : "pages/video/video",
             "style" :                                                                                    
             {
@@ -60,11 +49,10 @@
 			
         }
         ,{
->>>>>>> f22e01259027919f932e18bc995f4789d3d54c86
             "path" : "pages/management/management",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "考勤详情"
+                "navigationBarTitleText": "生产管理"
             }
         }
         ,{
@@ -91,8 +79,8 @@
                 "navigationBarBackgroundColor": "#000000"
             }
             
-        }
-        ,{
+        },
+		{
             "path" : "pages/login/code/code",
             "style" :                                                                                    
             {
@@ -110,20 +98,6 @@
             }
             
         }
-<<<<<<< HEAD
-=======
-        ,{
-            "path" : "pages/management/form/form",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "名单详情",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-<<<<<<< HEAD
-=======
->>>>>>> f22e01259027919f932e18bc995f4789d3d54c86
 		,{
 		    "path" : "pages/basiclnfo/basiclnfo",
 		    "style" :                                                                                    
@@ -132,7 +106,6 @@
 		        "enablePullDownRefresh": false
 		    }		    
 		}
->>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
     ],
 
 	"globalStyle": {
@@ -148,28 +121,19 @@
 				
 				{
 	                "pagePath": "pages/index/index"
-<<<<<<< HEAD
-	            },
-				{
-				    "pagePath": "pages/tea/tea"
-=======
 	            },				
 				{
 				    "pagePath": "pages/basiclnfo/basiclnfo"
->>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 				},
 	            {
 	                "pagePath": "pages/my/my"
 	            }
-<<<<<<< HEAD
 				// {
 				//     "pagePath": "pages/Gas/fault/fault"
 				// }
 				// {
 				//     "pagePath": "pages/realScene/realScene"
 				// },
-=======
->>>>>>> ecf40ff8c7896acc1ff167a3eaeba26af7e2a7d1
 	        ]
 	    },
 	"condition" : { //模式配置，仅开发期间生效

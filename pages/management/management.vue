@@ -9,135 +9,106 @@
 	<view class="charts-box">
 		<qiun-data-charts type="column" :chartData="chartData" />
 	</view>
-    <td>采购动态监测</td>
-
+	<view class="table-box">
+		<text class="item-text">采购动态监测</text>
+		<t-table id="tb">
+			<t-tr>
+				<t-th>采购日期</t-th>
+				<t-th>采购物品</t-th>
+				<t-th>数量</t-th>
+			</t-tr>
+			<t-tr v-for="(item,index) in tableData">
+				<t-td v-for="(e,i) in item">{{e}}</t-td>
+			</t-tr>
+		</t-table>
+	</view>
 		<ct-tabbar />
 	</view>
 </template>
 
 <script>
 	import ctTabbar from "@/components/Tabba/ctTabbar.vue"
-	import td from "@/components/t-table/t-td.vue"
-	import th from "@/components/t-table/t-th.vue"
-	import tr from "@/components/t-table/t-tr.vue"
+	import tTd from "@/components/t-table/t-td.vue"
+	import tTh from "@/components/t-table/t-th.vue"
+	import tTr from "@/components/t-table/t-tr.vue"
+	import tTable from "@/components/t-table/t-table.vue"
 	import {getcostProfit,getsalesvolume,getprocurement} from "@/common/api.js"
 	export default {
 		components:{
 			ctTabbar,
-			td,
-			th,
-			tr
+			tTd,
+			tTh,
+			tTr,
+			tTable
 			},
 		data() {
 			return {
 				chartlist: {
-					categories: [
-						"2016",
-						"2017",
-						"2018",
-						"2019",
-						"2021"
-					],
+					categories: [],
 					series: [{
-						"name": "成本费用",
-						"data": [
-							17,
-							20,
-							28,
-							34,
-							12
-				
-						]
+						"name": "成本费用(万元)",
+						"data": []
 					},
 					{
-						"name": "收益",
-						"data": [
-							17,
-							20,
-							28,
-							34,
-							11
-				
-						]
+						"name": "收益(万元)",
+						"data": []
 					},
 					],
 				},
 				chartData: {
-					categories: [
-						"2016",
-						"2017",
-						"2018",
-						"2019",
-						"2020"
-					],
+					categories: [],
 					series: [{
-						"name": "销量",
-						"data": [
-							117,
-							120,
-							128,
-							134,
-
-						]
+						"name": "销量(吨)",
+						"data": []
 					},
 					{
-						"name": "销售额",
-						"data": [
-							117,
-							120,
-							128,
-							134,
-
-						]
+						"name": "销售额(万元)",
+						"data": []
 					},
 					],
 				},
-				costProfit:[],
-				salesvolume:[],
-				procurement:[]
+				tableData:[
+					["2020.10.10","采购有机肥","1000袋"],
+					["2020.9.18","采购农事工具","80套"],
+					["2020.8.19","采购植保无人机","1架"],
+					["2020.7.27","采购杀虫版","1000套"]
+				]
 			}
 		},
 		onLoad() {
-			this.jishaun();
 			this.getInfo();
-
 		},
 		created() {
-			this.getNowFormatDate();
-
 		},
 		methods: {
-			jishaun() {
-				this.cardData.a1 = (this.cardData.sonTime / (this.cardData.sonTime + this.cardData.slate + this.cardData
-					.sother)).toFixed(2) * 100
-				this.cardData.a2 = (this.cardData.slate / (this.cardData.sonTime + this.cardData.slate + this.cardData
-					.sother)).toFixed(2) * 100
-				this.cardData.a3 = (this.cardData.sother / (this.cardData.sonTime + this.cardData.slate + this.cardData
-					.sother)).toFixed(2) * 100
-				this.cardData.b1 = (this.cardData.onTime / (this.cardData.onTime + this.cardData.late + this.cardData
-					.other)).toFixed(2) * 100
-				this.cardData.b2 = (this.cardData.late / (this.cardData.onTime + this.cardData.late + this.cardData.other))
-					.toFixed(2) * 100
-				this.cardData.b3 = (this.cardData.other / (this.cardData.onTime + this.cardData.late + this.cardData
-					.other)).toFixed(2) * 100
-			},
 			getInfo(){
 				getcostProfit().then(res=>{
-					
+					// console.log(res[1].data.data)
+					res[1].data.data.forEach(item=>{
+						this.chartlist.categories.push(item.year);
+						this.chartlist.series[0].data.push(item.cost);
+						this.chartlist.series[1].data.push(item.profit)
+					})
 				});
 				getsalesvolume().then(res=>{
-					
+					// console.log(res[1].data.data)
+					res[1].data.data.yearList.forEach(item=>{
+						this.chartData.categories.push(item);
+					});
+					res[1].data.data.data.forEach(item=>{
+						this.chartData.series[0].data.push(item.salesNumber);
+						this.chartData.series[1].data.push(item.salesMoney)
 				});
-				getprocurement().then(res=>{
-					
-				});
-			}
+			});
+			    getprocurement().then(res=>{
+				  // console.log(res)
+			    });
 		}
 	}
+}
 </script>
 
 <style scoped>
-
 	.time-title {
 		width: 750rpx;
 		line-height: 80rpx;
@@ -182,5 +153,8 @@
 	.item-text {
 		margin: 0 25rpx 10rpx 20rpx;
 		line-height: 80rpx;
+		color: #55ffff;
+		font-size: 35rpx;
+		text-align:center;
 	}
 </style>

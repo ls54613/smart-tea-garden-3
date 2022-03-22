@@ -1,9 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "u-tabs": "/node-modules/uview-ui/components/u-tabs/u-tabs",
-    "u-subsection": "/node-modules/uview-ui/components/u-subsection/u-subsection",
-    "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts",
-    "ct-tabbar": "/components/Tabba/ctTabbar"
-  }
-}

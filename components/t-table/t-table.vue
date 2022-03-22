@@ -61,7 +61,7 @@
 	};
 </script>
 
-<style scoped>
+<style>
 	.t-table {
 		width: 100%;
 		border: 1px #d0dee5 solid;

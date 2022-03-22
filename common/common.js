@@ -8,12 +8,6 @@ export const tabbar = [{
 						pagePath: '/pages/index/index',
 					},
 					{
-						iconPath: "http://cdn.1334.top/%E8%AE%BE%E5%A4%87.png",
-						selectedIconPath: "http://cdn.1334.top/%E8%AE%BE%E5%A4%87%20%281%29.png",
-						text: '茶企信息',
-						midButton: true,
-						customIcon: false,
-						pagePath: '/pages/tea/tea',
 						iconPath: "info",
 						selectedIconPath: "email-fill",
 						text: '企业信息',
