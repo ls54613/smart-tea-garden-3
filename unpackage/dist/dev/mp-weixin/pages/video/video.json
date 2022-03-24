@@ -1,0 +1,6 @@
+{
+  "navigationt": "custom",
+  "usingComponents": {
+    "ct-tabbar": "/components/Tabba/ctTabbar"
+  }
+}

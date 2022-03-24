@@ -1,0 +1,9 @@
+
+.head.data-v-3ec61a7e {width: 750rpx; height: 360rpx; position: relative;}
+.head image.data-v-3ec61a7e {width: 750rpx; height: 360rpx; position: absolute;}
+.title.data-v-3ec61a7e {width: 345rpx; height: 170rpx; position: absolute; top: 130rpx; left: 395rpx;}
+.title text.data-v-3ec61a7e {display: inline-block; color: #595950; font-size: 45rpx; font-weight: 700; line-height: 58rpx;}
+.title text.data-v-3ec61a7e:nth-child(1) {margin-left: 132rpx;}
+.title text.data-v-3ec61a7e:nth-child(3) {font-size: 28rpx;}
+.main text.data-v-3ec61a7e{display: block;text-align: center;}
+

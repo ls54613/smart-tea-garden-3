@@ -19,7 +19,7 @@
 		<view class="u-m-t-20">
 			<u-cell-group>
 				<u-cell-item icon="star" :title="textdata" @tap="toVideo"></u-cell-item>
-				<u-cell-item icon="account" title="人员考察" @tap="toManagement"></u-cell-item>
+				<u-cell-item icon="account" title="生产管理" @tap="toManagement"></u-cell-item>
 				<!-- <u-cell-item icon="eye" title="视频监控"></u-cell-item> -->
 				<u-cell-item icon="coupon" title="环境监测" @tap="toEnvironment"></u-cell-item>
 				<u-cell-item icon="heart" title="企业信息" @tap="tobasiclnfo"></u-cell-item>
@@ -44,7 +44,7 @@
 				pic:'',
 				nickname:'',
 				vid:'false',
-				textdata:'数据分析',
+				textdata:'基地实景',
 			} 
 		},
 		onLoad() {
@@ -93,7 +93,7 @@
 			},
 			toVideo() {
 				uni.navigateTo({
-					url:'/pages/video/video'
+					url:'/pages/picture/picture'
 				})
 			},
 			Falseinfo() {

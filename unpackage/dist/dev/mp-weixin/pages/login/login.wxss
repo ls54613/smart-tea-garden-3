@@ -1,0 +1,87 @@
+
+.content.data-v-b237504c {
+        /* background: #aaffff; */
+		background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170724%2Fd83f0446db0b4e6da9dc498ff6ddf1e9_th.png&refer=http%3A%2F%2Fimg.mp.sohu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650444902&t=0b97ed38395a5fafd2673fd4e77fcb0a);
+		background-size: cover;
+		overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+}
+.title.data-v-b237504c{
+		margin-top: 5px;
+		width: 100%;
+		text-align: center;
+		font-size: 65rpx;
+}
+.avatorWrapper.data-v-b237504c{
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+}
+.avator.data-v-b237504c{
+        width: 200rpx;
+        height: 200rpx;
+        overflow: hidden;
+}
+.avator .img.data-v-b237504c{
+        width: 100%
+}
+.form.data-v-b237504c{
+        padding: 0 100rpx;
+        margin-top: 30px;
+}
+.inputWrapper.data-v-b237504c{
+        width: 100%;
+        height: 80rpx;
+        /* background: white; */
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin-top: 15px;
+}
+.inputWrapper .input.data-v-b237504c{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+		border: 2px solid #55ffff;
+		border-radius: 50rpx;
+}
+.verifly.data-v-b237504c{
+		width: 100%;
+		height: 80rpx;
+		border-radius: 20px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		margin-top: 15px;
+		position: relative;
+}
+.verifly .vinput.data-v-b237504c{
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		border: 2px solid #55ffff;
+		border-radius: 50rpx;
+		float: left;
+}
+.verifly .ii.data-v-b237504c{
+		position: absolute;
+		margin-left: 20px;
+		width: 30%;
+		height: 100%;
+		border: 2px solid #55ff7f;
+}
+.loginBtn.data-v-b237504c{
+        width: 100%;
+        height: 80rpx;
+		color:#E5E5E5;
+        background: #2cbe9b;
+        /* border-radius: 50upx; */
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+

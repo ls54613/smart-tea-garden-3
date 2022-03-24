@@ -19,56 +19,56 @@
 					<image src="../../static/img/wendu.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list" :class="number==0?'active2' : ''">大气温度</view>
-						<view class="item-list" :class="number==0?'active2' : ''">18.0us/cm</view>
+						<view class="item-list" :class="number==0?'active2' : ''">℃</view>
 					</view>
 				</view>
 				<view class="item-box " :class="number==1?'active2' : ''" @tap="tapActive(1)">
 					<image src="../../static/img/dqshidu1.png" mode=""></image>
 					<view class="item-text-box">
 						<view class="item-list" :class="number==1?'active2' : ''">大气湿度</view>
-						<view class="item-list" :class="number==1?'active2' : ''">64.8%</view>
+						<view class="item-list" :class="number==1?'active2' : ''">%RH</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==2?'active2' : ''" @tap="tapActive(2)">
 					<image src="../../static/img/fensu.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list" :class="number==2?'active2' : ''">风速</view>
-						<view class="item-list" :class="number==2?'active2' : ''">109117.4Lux</view>
+						<view class="item-list" :class="number==2?'active2' : ''">(1.10m/s)</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==3?'active2' : ''" @tap="tapActive(3)">
 					<image src="../../static/img/fenxiang.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list " :class="number==3?'active2' : ''">风向</view>
-						<view class="item-list " :class="number==3?'active2' : ''">15%</view>
+						<view class="item-list " :class="number==3?'active2' : ''">S</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==4?'active2' : ''" @tap="tapActive(4)">
 					<image src="../../static/img/yanfen.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list " :class="number==4?'active2' : ''">盐分</view>
-						<view class="item-list " :class="number==4?'active2' : ''">31.2℃</view>
+						<view class="item-list " :class="number==4?'active2' : ''">mg/L</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==5?'active2' : ''" @tap="tapActive(5)">
 					<image src="../../static/img/yuliang.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list " :class="number==5?'active2' : ''">雨量</view>
-						<view class="item-list " :class="number==5?'active2' : ''">31.2℃</view>
+						<view class="item-list " :class="number==5?'active2' : ''">mm/min</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==6?'active2' : ''" @tap="tapActive(6)">
 					<image src="../../static/img/trwendu.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list " :class="number==6?'active2' : ''">土壤温度</view>
-						<view class="item-list " :class="number==6?'active2' : ''">31.2℃</view>
+						<view class="item-list " :class="number==6?'active2' : ''">℃</view>
 					</view>
 				</view>
 				<view class="item-box" :class="number==7?'active2' : ''" @tap="tapActive(7)">
 					<image src="../../static/img/frlizi.png" mode=""></image>
 					<view class="item-text-box ">
 						<view class="item-list " :class="number==7?'active2' : ''">负壤离子</view>
-						<view class="item-list " :class="number==7?'active2' : ''">32.1℃</view>
+						<view class="item-list " :class="number==7?'active2' : ''">个/m³</view>
 					</view>
 				</view>
 			</view>
