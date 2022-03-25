@@ -18,8 +18,13 @@
 		</view>
 		<view class="u-m-t-20">
 			<u-cell-group>
+<<<<<<< HEAD
 				<u-cell-item icon="star" :title="textdata" @tap="toPicture"></u-cell-item>
 				<u-cell-item icon="account" title="基地实景" @tap="toEnvironment()"></u-cell-item>
+=======
+				<u-cell-item icon="star" :title="textdata" @tap="toVideo"></u-cell-item>
+				<u-cell-item icon="account" title="生产管理" @tap="toManagement"></u-cell-item>
+>>>>>>> 7e82dc5b66603e85ceaa88058809f09c4cbb7fca
 				<!-- <u-cell-item icon="eye" title="视频监控"></u-cell-item> -->
 				<u-cell-item icon="coupon" title="生产管理" @tap="toManagement"></u-cell-item>
 				<u-cell-item icon="heart" title="企业信息" @tap="basiclnfo"></u-cell-item>
@@ -44,7 +49,11 @@
 				pic:'',
 				nickname:'',
 				vid:'false',
+<<<<<<< HEAD
 				textdata:'环境监测',
+=======
+				textdata:'基地实景',
+>>>>>>> 7e82dc5b66603e85ceaa88058809f09c4cbb7fca
 			} 
 		},
 		onLoad() {

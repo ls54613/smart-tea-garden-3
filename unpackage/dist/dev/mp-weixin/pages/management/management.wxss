@@ -43,7 +43,7 @@
 .item-text.data-v-0d4db134 {
 	margin: 0 25rpx 10rpx 20rpx;
 	line-height: 80rpx;
-	color: #55ffff;
+	color: #52aa7a;
 	font-size: 35rpx;
 	text-align:center;
 }

@@ -153,7 +153,7 @@
 	.item-text {
 		margin: 0 25rpx 10rpx 20rpx;
 		line-height: 80rpx;
-		color: #55ffff;
+		color: #52aa7a;
 		font-size: 35rpx;
 		text-align:center;
 	}
