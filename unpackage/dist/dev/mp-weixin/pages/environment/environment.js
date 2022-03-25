@@ -96,13 +96,13 @@ var components
 try {
   components = {
     uTabs: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-tabs/u-tabs.vue */ 232))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-tabs/u-tabs.vue */ 200))
     },
     uSubsection: function() {
-      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-subsection/u-subsection */ "node-modules/uview-ui/components/u-subsection/u-subsection").then(__webpack_require__.bind(null, /*! uview-ui/components/u-subsection/u-subsection.vue */ 239))
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-subsection/u-subsection */ "node-modules/uview-ui/components/u-subsection/u-subsection").then(__webpack_require__.bind(null, /*! uview-ui/components/u-subsection/u-subsection.vue */ 207))
     },
     qiunDataCharts: function() {
-      return Promise.all(/*! import() | uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts")]).then(__webpack_require__.bind(null, /*! @/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts.vue */ 246))
+      return Promise.all(/*! import() | uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts")]).then(__webpack_require__.bind(null, /*! @/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts.vue */ 214))
     }
   }
 } catch (e) {
@@ -337,7 +337,7 @@ __webpack_require__(/*! @/common/icon/iconfont.css */ 60); //
 //
 //
 //
-var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { tabs: [{ name: '一号基地' }, { name: '二号基地' }, { name: '三号基地' }], tabCurrent: 0, timeTab: [{ name: '日' }, { name: '月' }, { name: '年' }], current: 0, chartData: { categories: ["07:00", "09:00", "11:00", "13:00", "15:00", "17:00", "13:00", "15:00", "17:00"], series: [{ "name": "温度", "data": [17, 20, 28, 34, 30, 26, 34, 30, 26] }] }, number: 0 };}, methods: { change: function change(index) {this.tabCurrent = index;console.log(index);}, tapActive: function tapActive(num) {this.number = num;console.log(num);} } };exports.default = _default;
+var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { tabs: [{ name: '一号基地' }, { name: '二号基地' }, { name: '三号基地' }], tabCurrent: 0, timeTab: [{ name: '日' }, { name: '月' }, { name: '年' }], current: 0, chartData: { categories: ["07:00", "09:00", "11:00", "13:00", "15:00", "17:00", "13:00", "15:00", "17:00"], series: [{ "name": "温度", "data": [17, 20, 28, 34, 30, 26, 34, 30, 26] }] }, number: 0 };}, methods: { change: function change(index) {this.tabCurrent = index;console.log(index);}, tapActive: function tapActive(num) {this.number = num;console.log(num);} } };exports.default = _default;
 
 /***/ }),
 

@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

@@ -258,7 +258,7 @@ __webpack_require__(/*! @/common/icon/iconfont.css */ 60); //
 //
 //
 //
-var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
+var ctTabbar = function ctTabbar() {Promise.all(/*! require.ensure | components/Tabba/ctTabbar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Tabba/ctTabbar")]).then((function () {return resolve(__webpack_require__(/*! @/components/Tabba/ctTabbar.vue */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { ctTabbar: ctTabbar }, data: function data() {return { user: { openId: '', nickname: '', image: '' }, vid: 'false' };}, onLoad: function onLoad() {this.sahjhda();this.Falseinfo();}, methods: { sahjhda: function sahjhda() {var that = this;wx.login({ success: function success(res) {if (res.code) {// console.log('登录成功' + res.errMsg)
             // console.log(res.code)
             (0, _api.getOpenId)(res.code).then(function (e) {if (e[1].data.code = 200) {// console.log(e)
                 // console.log(e[1].data.data)
