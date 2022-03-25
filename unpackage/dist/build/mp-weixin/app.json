@@ -1,59 +1,42 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/realScene/realScene",
-        "pages/my/my",
-        "pages/environment/environment",
-        "pages/video/video",
-        "pages/management/management",
-        "pages/picture/picture",
-        "pages/my/modify/modify",
-        "pages/my/UavatarCropper/UavatarCropper",
-        "pages/login/login",
-        "pages/login/code/code",
-        "pages/infoshun/infoshun",
-        "pages/infoshun/shuninfo/shuninfo",
-        "pages/management/form/form",
-        "pages/Gas/Gas",
-        "pages/Gas/record/record",
-        "pages/Gas/overview/overview",
-        "pages/Gas/fault/fault",
-        "pages/Gas/details/details",
-        "pages/Gas/place/place",
-        "pages/Gas/equipment/equipment",
-        "pages/Gas/record/record_details",
-        "pages/Gas/testing/testing",
-        "pages/Gas/list/list"
-    ],
-    "subPackages": [],
-    "window": {
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "万欧智慧茶园",
-        "navigationBarBackgroundColor": "#F8F8F8",
-        "backgroundColor": "#F8F8F8"
-    },
-    "tabBar": {
-        "color": "#FFFFFF",
-        "bg-color": "#ffffff",
-        "list": [
-            {
-                "pagePath": "pages/index/index"
-            },
-            {
-                "pagePath": "pages/Gas/record/record"
-            },
-            {
-                "pagePath": "pages/Gas/Gas"
-            },
-            {
-                "pagePath": "pages/my/my"
-            },
-            {
-                "pagePath": "pages/Gas/overview/overview"
-            }
-        ]
-    },
-    "permission": {},
-    "usingComponents": {},
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/realScene/realScene",
+    "pages/my/my",
+    "pages/environment/environment",
+    "pages/video/video",
+    "pages/management/management",
+    "pages/picture/picture",
+    "pages/my/modify/modify",
+    "pages/my/UavatarCropper/UavatarCropper",
+    "pages/login/code/code",
+    "pages/infoshun/shuninfo/shuninfo",
+    "pages/basiclnfo/basiclnfo"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "万欧智慧茶园",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "bg-color": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/basiclnfo/basiclnfo"
+      },
+      {
+        "pagePath": "pages/my/my"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

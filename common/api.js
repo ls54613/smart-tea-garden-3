@@ -1,5 +1,5 @@
-import { baseUrl,baseUrl2,baseUrl3} from './config.js'
-
+import { baseUrl,baseUrl2,baseUrl3,baseUrl4} from './config.js'
+const token = uni.getStorageSync('storage_token')
 
 export function getOpenId(code){
 	return uni.request({
@@ -55,6 +55,9 @@ export function getBasiclnfo(){
 	return uni.request({
 		url: `${baseUrl3}/teaEnterpriseInfo/getBaseInfo/18`,
 		method: 'GET',
+		header:{
+			  Authorization:"Bearer"+token
+		}
 	});
 }
 // 成本与收益
@@ -62,6 +65,9 @@ export function getcostProfit(){
  return uni.request({
   url: `${baseUrl3}/teaEnterpriseInfo/costAndProfitStatistics/18`,
   method: 'GET',
+  header:{
+  	  Authorization:"Bearer"+token
+  }
  });
 }
 // 销售与销售额
@@ -69,6 +75,9 @@ export function getsalesvolume(){
  return uni.request({
   url: `${baseUrl3}/teaEnterpriseInfo/getYieldSalesTotal?id=18`,
   method: 'GET',
+  header:{
+  	  Authorization:"Bearer"+token
+  }
  });
 }
 // 采购动态
@@ -76,5 +85,23 @@ export function getprocurement (){
  return uni.request({
   url: `${baseUrl3}/teaEnterpriseInfo/purchaseMonitor?id=18`,
   method: 'GET',
+  header:{
+	  Authorization:"Bearer"+token
+  }
  });
+}
+// 验证码
+export function getcode (){
+ return uni.request({
+  url: `${baseUrl4}/captchaImage`,
+  method: 'GET',
+ });
+}
+// 登录
+export function post (info){
+  return uni.request({
+   url: `${baseUrl4}/login`,
+   method: 'POST',
+   data:info
+  });
 }

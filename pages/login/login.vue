@@ -1,5 +1,5 @@
 <template>
-    <view class="content">
+  <view class="content">
         <view class="avatorWrapper">
             <view class="avator">
                 <image class="img" src="../../static/img/taiyang.png" mode="widthFix"></image>
@@ -10,32 +10,77 @@
 		</view>
         <view class="form">
             <view class="inputWrapper">
-                <input class="input" placeholder-style="color: #ffffff;" type="text" value="" placeholder="请输入用户名"/>
+                <input class="input" placeholder-style="color: #ffffff;" type="text" v-model="form.username" placeholder="用户名"/>
             </view>
             <view class="inputWrapper">
-                <input class="input" placeholder-style="color: #ffffff;" type="password" value="" placeholder="请输入密码"/>
+                <input class="input" placeholder-style="color: #ffffff;" type="password" v-model="form.password" placeholder="密码"/>
             </view>
+			<view class="verifly">
+				<input class="vinput" placeholder-style="color: #ffffff;" type="text" v-model="form.code" placeholder="验证码"/>
+				<image class="ii" :src="src" @tap="shuaxin"></image>
+			</view>
             <button  class="loginBtn" @click="toIndex">登录</button>
         </view>
     </view>
+	
 </template>
 
 <script>
+	import {getcode,post} from '@/common/api.js'
     export default {
         data() {
             return {
-                title: '万农宝'
+                title: '万农宝',
+				src:'',
+				uuid:'',
+				form:{username:'',password:'',code:''}	
             }
         },
         onLoad() {
-
+			this.getcoder();
         },
         methods: {
+			// 登录
 			toIndex(){
-				uni.switchTab({
-					url:'/pages/index/index'
+					let that = this
+					this.form.uuid = this.uuid;
+					post(this.form).then(res=>{
+						// console.log(res[1].data);
+						if(res[1].data.code==200){
+							uni.setStorageSync('storage_token', res[1].data.token);
+							uni.switchTab({
+									url:'/pages/index/index'
+								})
+						}else{
+							// console.log(res[1].data.msg)
+							uni.showModal({
+								    title: '错误提示',
+								    content: res[1].data.msg,
+								    success: function (res) {
+								        if (res.confirm) {
+								            console.log('用户点击确定');
+											that.getcoder();
+											that.form.code=''
+								        } else if (res.cancel) {
+								            console.log('用户点击取消');
+								        }
+								    }
+								});
+						}
+						});
+			},
+			// 获取uuid和验证码图片
+			getcoder(){
+				getcode().then(res=>{
+					// console.log(res[1].data)
+					this.src = 'data:image/gif;base64,'+res[1].data.img;
+					this.uuid = res[1].data.uuid;
 				})
-			}
+			},
+			// 点击图片刷新验证码
+			shuaxin(){
+				this.getcoder();
+			},
         }
     }
 </script>
@@ -50,7 +95,7 @@
         height: 100vh;
     }
 	.title{
-		margin-top: 15px;
+		margin-top: 5px;
 		width: 100%;
 		text-align: center;
 		font-size: 65rpx;
@@ -88,9 +133,36 @@
         height: 100%;
         text-align: center;
         font-size: 15px;
-		border: 2px solid #55ffff;
+		color: #ffffff;
+		border: 2px solid #ffffff;
 		border-radius: 50upx;
     }
+	.verifly{
+		width: 100%;
+		height: 80upx;
+		border-radius: 20px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		margin-top: 15px;
+		position: relative;
+	}
+	.verifly .vinput{
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		font-size: 15px;
+		color: #ffffff;
+		border: 2px solid #FFFFFF;
+		border-radius: 50upx;
+		float: left;
+	}
+	.verifly .ii{
+		position: absolute;
+		margin-left: 20px;
+		width: 30%;
+		height: 100%;
+		border: 2px solid #FFFFFF;
+	}
     .loginBtn{
         width: 100%;
         height: 80upx;

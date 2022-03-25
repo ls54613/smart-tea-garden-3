@@ -16,13 +16,6 @@
 				"navigationStyle": "custom"
 			}
 		}
-		,{
-		    "path" : "pages/realScene/realScene",
-		    "style" :                                                                                    
-		    {
-		        "navigationStyle": "custom"
-		    }
-		}
         ,{
             "path" : "pages/my/my",
             "style" :                                                                                    
@@ -38,15 +31,6 @@
                 "navigationStyle": "custom"
             }
             
-        }
-        ,{
-            "path" : "pages/video/video",
-            "style" :                                                                                    
-            {
-               "navigationt": "custom"
-            }
-            
-			
         }
         ,{
             "path" : "pages/management/management",
@@ -77,15 +61,6 @@
             {
                 "navigationBarTitleText": "头像选择",
                 "navigationBarBackgroundColor": "#000000"
-            }
-            
-        },
-		{
-            "path" : "pages/login/code/code",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "登录验证码",
-                "enablePullDownRefresh": false
             }
             
         }

@@ -33,7 +33,7 @@
 				<t-td>经营茶叶生产</t-td>
 			</t-tr>
 		</t-table>
-		<image src="../../static/img/12344(1).png" mode=""></image>
+		<image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170724%2Fd83f0446db0b4e6da9dc498ff6ddf1e9_th.png&refer=http%3A%2F%2Fimg.mp.sohu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650444902&t=0b97ed38395a5fafd2673fd4e77fcb0a" mode="aspectFit"></image>
 		<ct-tabbar />
 	</view>
 </template>

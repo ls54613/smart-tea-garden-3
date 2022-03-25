@@ -1,8 +1,6 @@
 {
-  "navigationStyle": "custom",
+  "navigationt": "custom",
   "usingComponents": {
-    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
-    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
     "ct-tabbar": "/components/Tabba/ctTabbar"
   }
 }

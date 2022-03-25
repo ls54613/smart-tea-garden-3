@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "设备质检",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
-    "u-slider": "/node-modules/uview-ui/components/u-slider/u-slider",
-    "u-subsection": "/node-modules/uview-ui/components/u-subsection/u-subsection"
-  }
-}

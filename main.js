@@ -11,8 +11,6 @@ const app = new Vue({
 import store from './store'
 Vue.prototype.$store = store
 
-
-
 import uView from "uview-ui";
 Vue.use(uView);
 app.$mount()

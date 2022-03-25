@@ -1,0 +1,50 @@
+
+.time-title.data-v-0d4db134 {
+	width: 750rpx;
+	line-height: 80rpx;
+	font-size: 35rpx;
+	text-align: center;
+}
+.time-title .time-left.data-v-0d4db134 {
+	margin-right: 30rpx;
+}
+.item-box.data-v-0d4db134 {
+	background-color: #F1F1F1;
+	padding: 30rpx 0;
+}
+.item-list.data-v-0d4db134 {
+	width: 700rpx;
+	height: 80rpx;
+	position: relative;
+	margin: 0 25rpx;
+}
+.middle-list.data-v-0d4db134 {
+	margin: 30rpx 25rpx;
+}
+.item-list text.data-v-0d4db134 {
+	line-height: 40rpx;
+}
+.right-text.data-v-0d4db134 {
+	top: 0rpx;
+	position: absolute;
+	right: 0rpx;
+	text-align: center;
+	line-height: 40rpx;
+}
+.time-tab.data-v-0d4db134 {
+	margin: 0 10rpx;
+}
+/* 请根据需求修改图表容器尺寸，如果父容器没有高度图表则会显示异常 */
+.charts-box.data-v-0d4db134 {
+	width: 750rpx;
+	height: 500rpx;
+}
+.right-text text.data-v-0d4db134 {margin-right: 300rpx;}
+.item-text.data-v-0d4db134 {
+	margin: 0 25rpx 10rpx 20rpx;
+	line-height: 80rpx;
+	color: #55ffff;
+	font-size: 35rpx;
+	text-align:center;
+}
+

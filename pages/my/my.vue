@@ -18,11 +18,11 @@
 		</view>
 		<view class="u-m-t-20">
 			<u-cell-group>
-				<u-cell-item icon="star" :title="textdata" @tap="toVideo"></u-cell-item>
-				<u-cell-item icon="account" title="人员考察" @tap="toManagement"></u-cell-item>
+				<u-cell-item icon="star" :title="textdata" @tap="toPicture"></u-cell-item>
+				<u-cell-item icon="account" title="基地实景" @tap="toEnvironment()"></u-cell-item>
 				<!-- <u-cell-item icon="eye" title="视频监控"></u-cell-item> -->
-				<u-cell-item icon="coupon" title="环境监测" @tap="toEnvironment"></u-cell-item>
-				<u-cell-item icon="heart" title="企业信息" @tap="tobasiclnfo"></u-cell-item>
+				<u-cell-item icon="coupon" title="生产管理" @tap="toManagement"></u-cell-item>
+				<u-cell-item icon="heart" title="企业信息" @tap="basiclnfo"></u-cell-item>
 			</u-cell-group>
 		</view>
 <!-- 		<view class="u-m-t-20">
@@ -44,7 +44,7 @@
 				pic:'',
 				nickname:'',
 				vid:'false',
-				textdata:'数据分析',
+				textdata:'环境监测',
 			} 
 		},
 		onLoad() {
@@ -59,7 +59,9 @@
 				const that = this;
 				wx.login({
 					success(res) {
+						console.log(res)
 						getOpenId(res.code).then((e)=>{
+							console.log(e)
 							if(e[1].data.code = 200) {
 								const openId = e[1].data.data.match(/"openid":"(\S*)"}/)[1]
 								getOpenIdDetail(openId).then((arr)=>{
@@ -91,9 +93,9 @@
 					url:'/pages/environment/environment'
 				})
 			},
-			toVideo() {
+			toPicture() {
 				uni.navigateTo({
-					url:'/pages/video/video'
+					url:'/pages/picture/picture'
 				})
 			},
 			Falseinfo() {
