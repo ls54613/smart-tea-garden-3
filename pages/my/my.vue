@@ -46,39 +46,58 @@
 				pic:'',
 				nickname:'',
 				vid:'false',
-
 				textdata:'环境监测',
-
-
 			} 
 		},
 		onLoad() {
-			this.Falseinfo()
+			this.Falseinfo();
+			this.onGotUserInfo();
 		},
 		onShow() {
-			this.sahjhda();
 		},
 		methods: {
 			//获取用户信息
-			sahjhda() {
-				const that = this;
-				wx.login({
-					success(res) {
-						console.log(res)
-						getOpenId(res.code).then((e)=>{
-							console.log(e)
-							if(e[1].data.code = 200) {
-								const openId = e[1].data.data.match(/"openid":"(\S*)"}/)[1]
-								getOpenIdDetail(openId).then((arr)=>{
-									that.nickname = arr[1].data.data.nickname
-									that.pic = arr[1].data.data.image
-								})
-							}
-						})
+			onGotUserInfo() {
+					const _this = this;
+					// 获取用户信息
+					uni.showModal({	
+						title: '温馨提示',
+						content: '亲，授权微信登录后才能正常使用小程序功能',	
+						success(res) {			
+			            //如果用户点击了确定按钮		
+							if (res.confirm) {			
+								uni.getUserProfile({				
+								desc: '获取你的昵称、头像、地区及性别',				
+								success: res => {
+									_this.nickname = JSON.parse(res.rawData).nickName;
+									_this.pic = JSON.parse(res.rawData).avatarUrl; 			
+								},				
+								fail: res => {									
+									console.log(res)					
+									//拒绝授权					
+									uni.showToast({						
+										title: '您拒绝了请求不能正常使用小程序',						
+										icon: 'error',						
+										duration: 2000,
+									});					
+									return;				
+									}			
+								});		
+								} else if (res.cancel) {			
+									//如果用户点击了取消按钮				
+									uni.showToast({				
+									title: '您拒绝了请求不能正常使用小程序',				
+									icon: 'error',				
+									duration: 2000,
+								});			
+								return;		
+							}	
 					}
-				})
-			},
+				});
+	        },
 			toModify() {
+				uni.setStorageSync('nickName',this.nickname)
+				uni.setStorageSync('avatar',this.pic)
 				uni.navigateTo({
 					url: '/pages/my/modify/modify'
 				})

@@ -2,12 +2,12 @@
 	<view>
 		<view class="wrap">
 			<view class="u-avatar-wrap">
-				<image class="u-avatar-demo" :src="object.image" mode="aspectFill" @click="chooseAvatar"></image>
+				<image class="u-avatar-demo" :src="image" mode="aspectFill" @click="chooseAvatar"></image>
 			</view>
 			<view class="input-box">
 				<text>昵称：</text>
 				<view class="input-list">
-					<u-input v-model="object.nickname" :maxlength="8"  :clearable="clearable" placeholder="请输入您的昵称" />
+					<u-input v-model="nickname" :maxlength="8"  :clearable="clearable" placeholder="请输入您的昵称" />
 				</view>
 			</view>
 			<view class="custom-style">
@@ -23,12 +23,8 @@
 	export default {
 		data() {
 			return {
-				object:{
-					nickname: '',
-					phone: '',
-					openId:'',
-					image: 'http://cdn.1334.top/common132.jpg',
-				},
+				nickname:'',
+				image:"",
 				type: 'number',
 				clearable: false,
 			}
@@ -51,7 +47,7 @@
 			})
 		},
 		onLoad() {
-			this.sahjhda();
+			this.getInfo();
 		},
 		methods: {
 			chooseAvatar() {
@@ -68,24 +64,6 @@
 					}
 				})
 			},
-			sahjhda() {
-				const that = this;
-				wx.login({
-					success(res) {
-						getOpenId(res.code).then((e)=>{
-							if(e[1].data.code = 200) {
-								const openId = e[1].data.data.match(/"openid":"(\S*)"}/)[1]
-									that.object.openId = openId
-								getOpenIdDetail(openId).then((arr)=>{
-									that.object.nickname = arr[1].data.data.nickname
-									that.object.image = arr[1].data.data.image
-									that.object.phone = arr[1].data.data.phone
-								})
-							}
-						})
-					}
-				})
-			},
 			update() {
 				this.$u.put(`${baseUrl}/gdadmin/mini/wx_user/update`,this.object	).then(res =>{
 					console.log(res);
@@ -93,8 +71,13 @@
 				uni.navigateBack({
 					 delta: 1
 				});
+			},
+			// 获取头像昵称
+			getInfo(){
+				// console.log(uni.getStorageSync("nickName"))
+				this.nickname = uni.getStorageSync("nickName"),
+				this.image = uni.getStorageSync("avatar")
 			}
-			
 		}
 	}
 </script>
