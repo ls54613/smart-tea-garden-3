@@ -58,8 +58,8 @@
 		methods:{
 			getInfo(){
 				getBasiclnfo().then(res=>{
-					this.data=res[1].data.data;
-					console.log(res[1].data.data)
+					// console.log(res[1].data.rows[0])
+					this.data=res[1].data.rows[0];
 				})
 			}
 		}

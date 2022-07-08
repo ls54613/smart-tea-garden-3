@@ -53,7 +53,8 @@ export function getIsFalse(){
 // 茶企基本信息
 export function getBasiclnfo(){
 	return uni.request({
-		url: `${baseUrl3}/teaEnterpriseInfo/getBaseInfo/18`,
+		// url: `${baseUrl3}/teaEnterpriseInfo/getBaseInfo/25`,
+		url:'http://localhost:8081/system/teaEnterpriseInfo/list?pageNum=1&pageSize=10&enterpriseName=常宁市兴华农业开发有限公司&deptId=100',
 		method: 'GET',
 		header:{
 			  Authorization:"Bearer"+token
@@ -63,7 +64,8 @@ export function getBasiclnfo(){
 // 成本与收益
 export function getcostProfit(){
  return uni.request({
-  url: `${baseUrl3}/teaEnterpriseInfo/costAndProfitStatistics/18`,
+  // url: `${baseUrl3}/teaEnterpriseInfo/costAndProfitStatistics/25`,
+  url:'http://localhost:8081/system/teaEnterpriseYieldSales/list?pageNum=1&pageSize=10&teaPeasantId=12&deptId=100',
   method: 'GET',
   header:{
   	  Authorization:"Bearer"+token
@@ -73,7 +75,8 @@ export function getcostProfit(){
 // 销售与销售额
 export function getsalesvolume(){
  return uni.request({
-  url: `${baseUrl3}/teaEnterpriseInfo/getYieldSalesTotal?id=18`,
+  // url: `${baseUrl3}/teaEnterpriseInfo/getYieldSalesTotal?id=25`,
+  url:'http://localhost:8081/system/teaEnterpriseYieldSales/list?pageNum=1&pageSize=10&teaPeasantId=12&deptId=100',
   method: 'GET',
   header:{
   	  Authorization:"Bearer"+token
@@ -83,7 +86,8 @@ export function getsalesvolume(){
 // 采购动态
 export function getprocurement (){
  return uni.request({
-  url: `${baseUrl3}/teaEnterpriseInfo/purchaseMonitor?id=18`,
+  // url: `${baseUrl3}/teaEnterpriseInfo/purchaseMonitor?id=12`,
+  url:'http://localhost:8081/system/teaEnterpriseProcurement/list?pageNum=1&pageSize=10&teaEnterpriseId=12&deptId=100',
   method: 'GET',
   header:{
 	  Authorization:"Bearer"+token

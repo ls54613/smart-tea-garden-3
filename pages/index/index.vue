@@ -4,7 +4,7 @@
 			<image src="../../static/img/v2_r0sz2m.png" mode=""></image>
 			<view class="title">
 				<text>欢迎使用</text>
-				<text>万欧数字化茶园</text>
+				<text>数字化茶园</text>
 				<text>开发全程数字化管理</text>
 			</view>
 		</view>

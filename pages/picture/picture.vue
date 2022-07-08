@@ -4,7 +4,7 @@
 			<image src="../../static/img/v2_r0sz2m.png" mode=""></image>
 			<view class="title">
 				<text>欢迎使用</text>
-				<text>万欧数字化茶园</text>
+				<text>数字化茶园</text>
 				<text>开发全程数字化管理</text>
 			</view>
 		</view>
@@ -17,7 +17,7 @@
 					@error="videoErrorCallback"  enable-danmu  controls ></video>
 			</view>
 			<view class="video-box">
-				<video src="http://hls01open.ys7.com/openlive/02b0a6383639444d9518c263f9817152.hd.m3u8"
+				<video src="https://open.ys7.com/v3/openlive/236324399_1_2.m3u8?expire=1662694318&id=357850965401014272&t=4cc312265de75fb5d4fa06c98fdc143d6d1c8392cb2b551a54c823fb728b6caa&ev=100"
 					@error="videoErrorCallback"  enable-danmu  controls ></video>
 			</view>
 		</view>

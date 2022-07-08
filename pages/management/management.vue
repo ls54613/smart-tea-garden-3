@@ -18,7 +18,9 @@
 				<t-th>数量</t-th>
 			</t-tr>
 			<t-tr v-for="(item,index) in tableData">
-				<t-td v-for="(e,i) in item">{{e}}</t-td>
+				<t-td>{{item.purchaseDate}}</t-td>
+				<t-td>{{item.purchaseGoods}}</t-td>
+				<t-td>{{item.purchaseNumber}}</t-td>
 			</t-tr>
 		</t-table>
 	</view>
@@ -68,10 +70,6 @@
 					],
 				},
 				tableData:[
-					["2020.10.10","采购有机肥","1000袋"],
-					["2020.9.18","采购农事工具","80套"],
-					["2020.8.19","采购植保无人机","1架"],
-					["2020.7.27","采购杀虫版","1000套"]
 				]
 			}
 		},
@@ -83,25 +81,24 @@
 		methods: {
 			getInfo(){
 				getcostProfit().then(res=>{
-					// console.log(res[1].data.data)
-					res[1].data.data.forEach(item=>{
+					// console.log(res[1].data.rows)
+					res[1].data.rows.reverse().forEach(item=>{
 						this.chartlist.categories.push(item.year);
-						this.chartlist.series[0].data.push(item.cost);
-						this.chartlist.series[1].data.push(item.profit)
+						this.chartlist.series[0].data.push(item.productCostStatistics);
+						this.chartlist.series[1].data.push(item.productProfitStatistics)
 					})
 				});
 				getsalesvolume().then(res=>{
-					// console.log(res[1].data.data)
-					res[1].data.data.yearList.forEach(item=>{
-						this.chartData.categories.push(item);
-					});
-					res[1].data.data.data.forEach(item=>{
-						this.chartData.series[0].data.push(item.salesNumber);
-						this.chartData.series[1].data.push(item.salesMoney)
-				});
+					// console.log(res[1].data.rows)
+				res[1].data.rows.reverse().forEach(item=>{
+					this.chartData.categories.push(item.year);
+					this.chartData.series[0].data.push(item.salesVolumeMoney);
+					this.chartData.series[1].data.push(item.salesVolumeNumber)
+				})
 			});
 			    getprocurement().then(res=>{
-				  // console.log(res)
+				  // console.log(res[1].data.rows)
+				  this.tableData = res[1].data.rows
 			    });
 		}
 	}
